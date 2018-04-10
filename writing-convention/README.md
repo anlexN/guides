@@ -75,6 +75,7 @@ Do :
    ```javascript
    Hello 世界 !
    ```
+4. dark text on white background
 
 Don't :
 1. use trailing or leading underscore

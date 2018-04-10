@@ -75,6 +75,7 @@ UPPERCASE :
    ```javascript
    Hello 世界 !
    ```
+4. 白底黑字
 
 禁止 :
 1. 尾部或前导下划线
