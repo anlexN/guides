@@ -1,18 +1,18 @@
-extends /views/layouts/index
+extends views/layouts/index
 
 block stylesheet
     style
-        include /public/stylesheets/description/index.css
-        include /public/stylesheets/drawer/index.css
-        include /public/stylesheets/homepage/index.css
+        include public/stylesheets/description/index.css
+        include public/stylesheets/drawer/index.css
+        include public/stylesheets/homepage/index.css
     
 block content
     input#checker(type="checkbox")
     label(for="checker")
         div
     nav.drawer
-        a(href="/views/convention/index.html") Convention
-        a(href="/views/donate/index.html") Donate
+        a(href="views/convention/index.html") Convention
+        a(href="views/donate/index.html") Donate
     h1.header Guides
     dl.description
         dt Created reason
