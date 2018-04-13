@@ -1,7 +1,7 @@
 # guides
 
 ## created reason :
-1. the world is organized , meaningful , elegant !
+1. the world is elegant , meaningful , organized !
 
 ### Be Collaborators ? welcome !
 

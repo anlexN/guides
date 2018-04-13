@@ -1,0 +1,77 @@
+extends /views/layouts/index
+
+block stylesheet
+    style
+        include /public/stylesheets/convention/index.css
+        include /public/stylesheets/description/index.css
+        include /public/stylesheets/lefter/index.css
+
+block content
+    a.lefter(href="/") ←
+    a(href="https://github.com/anlexN/mongoose-model") mongoose-model
+
+    dl.description
+      dt 5 Case
+      dd camelCase: first letter lowercase , but after that all words uppercase
+        pre.
+          //function , instance , object , property , variable
+          function thisFuction () {} ,
+          const thisInstance = new thisFunction() ,
+          const thisObject = { myProperty : 1 }
+      dd hyphen-case: all words is lowercase , but words have a hyphen to each other
+        pre.
+          //url
+          https://git-scm.com
+      dd lowercase: all letters lowercase
+        pre.
+          //folder and file name , only one word
+          📂 models
+              📂 thing
+                  📂 action
+                  📂 creativework
+                  📂 event
+                  📂 ...
+                  index.js
+      dd hyphen-case
+        pre.
+          //folder and file name , more than one word
+          📂 models
+              📂 thing
+                  📂 action
+                      📂 achieve-action
+                      📂 access-action
+                      📂 consume-action
+                      📂 ...
+                      demo-index.js
+          
+      dd PascalCase: all words is lowercase , but first letter is uppercase
+        pre.
+          //class , constructor , function library , singleton
+          const ThingSchema = new mongoose.Schema({});
+          class GoodUser {};
+      dd UPPERCASE: all letters uppercase
+        pre.
+          acronym
+      dt Space
+      dd between diffrent languages
+      dd between number and unit
+      dt Html
+      dd do not use lower levels to decrease heading font size: use the CSS font-size property instead
+      dd avoid skipping heading levels: always start from h1, next use h2 and so on
+      dd avoiding using h1 more than once on a page
+      dt Note
+      dd full words
+        pre.
+          //bad
+          function q() {}
+
+          //good
+          function query() {}
+      dd ccording to the official
+        pre.
+          Android , IOS , iPhone , Google
+      dd english punctuation
+        pre.
+          Hello 世界!
+      dd dark text on white background
+      dd no trailing or leading underscore

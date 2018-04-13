@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>guides</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <style>body {
+    color: rgba(0, 0, 0, .87);
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+
+body::before {
+    background-size: cover;
+    background-attachment: fixed;
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+@media (max-width: 750px) {
+  body::before {
+    /* background-image: url("https://is.gd/hero60q025x"); */
+    background-image: url("/public/images/desktop/desktop-60p-10x.jpg");
+  }
+}
+@media (min-width: 750px)  and (max-width: 1440px) {
+  body::before {
+    /* background-image: url("https://is.gd/hero60q050x"); */
+    background-image: url("/public/images/desktop/desktop-60p-25x.jpg");
+  }
+}
+@media (min-width: 1440px)  and (max-width: 2160px) {
+  body::before {
+    /* background-image: url("https://is.gd/hero60q075x"); */
+    background-image: url("/public/images/desktop/desktop-60p-25x.jpg");
+  }
+}
+
+@media (min-width: 2160px) {
+    body:::before {
+        /* background-image: url("https://is.gd/hero60q"); */
+            background-image: url("/public/images/desktop/desktop-60p-50x.jpg");
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  outline: none;
+  color: rgba(33, 150, 243, .87);
+  transition: color 500ms;
+}
+
+a:hover {
+  color: rgba(33, 150, 243, 1);
+}
+    </style>
+    <style>
+      a:nth-child(2) {
+    /* text-align: center; */
+    padding: 16px 8px;
+}
+
+pre {
+    margin-left: 18px;
+    background-color: rgba(33, 150, 243, .12);
+    padding: 16px;
+}.description {
+    background-color: rgba(255, 255, 255, .87);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.description dd {
+    color: rgba(0, 0, 0, .54);
+}.lefter {
+    font-size: 48px;
+    line-height: 48px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+}
+
+    </style>
+  </head>
+  <body><a class="lefter" href="/">←</a><a href="https://github.com/anlexN/mongoose-model">mongoose-model</a>
+    <dl class="description">
+      <dt>5 Case</dt>
+      <dd>camelCase: first letter lowercase , but after that all words uppercase
+        <pre>//function , instance , object , property , variable
+function thisFuction () {} ,
+const thisInstance = new thisFunction() ,
+const thisObject = { myProperty : 1 }</pre>
+      </dd>
+      <dd>hyphen-case: all words is lowercase , but words have a hyphen to each other
+        <pre>//url
+https://git-scm.com</pre>
+      </dd>
+      <dd>lowercase: all letters lowercase
+        <pre>//folder and file name , only one word
+📂 models
+    📂 thing
+        📂 action
+        📂 creativework
+        📂 event
+        📂 ...
+        index.js</pre>
+      </dd>
+      <dd>hyphen-case
+        <pre>//folder and file name , more than one word
+📂 models
+    📂 thing
+        📂 action
+            📂 achieve-action
+            📂 access-action
+            📂 consume-action
+            📂 ...
+            demo-index.js
+</pre>
+      </dd>
+      <dd>PascalCase: all words is lowercase , but first letter is uppercase
+        <pre>//class , constructor , function library , singleton
+const ThingSchema = new mongoose.Schema({});
+class GoodUser {};</pre>
+      </dd>
+      <dd>UPPERCASE: all letters uppercase
+        <pre>acronym</pre>
+      </dd>
+      <dt>Space</dt>
+      <dd>between diffrent languages</dd>
+      <dd>between number and unit</dd>
+      <dt>Html</dt>
+      <dd>do not use lower levels to decrease heading font size: use the CSS font-size property instead</dd>
+      <dd>avoid skipping heading levels: always start from h1, next use h2 and so on</dd>
+      <dd>avoiding using h1 more than once on a page</dd>
+      <dt>Note</dt>
+      <dd>full words
+        <pre>//bad
+function q() {}
+
+//good
+function query() {}</pre>
+      </dd>
+      <dd>ccording to the official
+        <pre>Android , IOS , iPhone , Google</pre>
+      </dd>
+      <dd>english punctuation
+        <pre>Hello 世界!</pre>
+      </dd>
+      <dd>dark text on white background</dd>
+      <dd>no trailing or leading underscore</dd>
+    </dl>
+  </body>
+</html>

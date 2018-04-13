@@ -1,0 +1,10 @@
+a:nth-child(2) {
+    /* text-align: center; */
+    padding: 16px 8px;
+}
+
+pre {
+    margin-left: 18px;
+    background-color: rgba(33, 150, 243, .12);
+    padding: 16px;
+}

@@ -1,0 +1,79 @@
+[id="checker"] {
+    display: none;
+}
+
+[for="checker"] {
+    height: 48px;
+    position: fixed;
+    transition: all 400ms;
+    user-select: none;
+    width: 48px;
+    z-index: 2;
+}
+
+[for="checker"] div,
+[for="checker"] div:before,
+[for="checker"] div:after {
+    position: absolute;
+    height: 4px;
+    width: 32px;
+    background: #2196f3;
+    content: '';
+    margin-top: 20px;
+    margin-left: 8px;
+    transition: all 500ms;
+}
+
+[for="checker"] div:before {
+    margin-top: -10px;
+    margin-left: 0;
+}
+
+[for="checker"] div:after {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+[id="checker"]:checked ~ [for="checker"] div {
+    background-color: transparent;
+}
+
+[id="checker"]:checked ~ [for="checker"] div:before {
+    transform: rotate(45deg);
+    margin-top: 0;
+}
+
+[id="checker"]:checked ~ [for="checker"] div:after {
+    transform: rotate(-45deg);
+    margin-top: 0;
+}
+
+.drawer {
+    padding-top: 48px; 
+    position: fixed;
+    left: -272px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .54);
+    transition: left 500ms;
+    width: 272px;
+    z-index: 1;
+}
+
+[id="checker"]:checked ~ .drawer {
+    left: 0;
+}
+
+.drawer a {
+    font-size: 22px;
+    display: block;
+    padding: 8px 16px;
+    color: rgba(255, 255, 255, .54);
+    transition: all 500ms;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.drawer a:hover {
+    color: rgba(255, 255, 255, .87);
+}
