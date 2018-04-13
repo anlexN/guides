@@ -1,12 +1,12 @@
-extends /views/layouts/index
+extends ../../views/layouts/index
 
 block stylesheet
     style
-        include /public/stylesheets/donate/index.css
-        include /public/stylesheets/lefter/index.css
+        include ../../public/stylesheets/donate/index.css
+        include ../../public/stylesheets/lefter/index.css
 
 block content
-    a.lefter(href="/") ←
+    a.lefter(href="../../") ←
     div
-      img(src="/public/images/pay/alipay800x1280.jpg", alt="alipay")
-      img(src="/public/images/pay/wechatpay800x1280.jpg", alt="wechatpay")
+      img(src="../../public/images/pay/alipay800x1280.jpg", alt="alipay")
+      img(src="../../public/images/pay/wechatpay800x1280.jpg", alt="wechatpay")
