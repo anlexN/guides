@@ -1,5 +1,5 @@
 <dl class="description">
-      <dt>5 Case</dt>
+      <dt>5种书写</dt>
       <dd>camelCase: 首字母小写，但后面所有单词大写
         <pre>//函数, 实例, 对象, 属性, 变量
 function thisFuction () {} ,
@@ -43,11 +43,11 @@ class GoodUser {};</pre>
       <dt>空格</dt>
       <dd>在不同的语言之间</dd>
       <dd>在数量和单位之间</dd>
-      <dt>Html</dt>
+      <dt>超文本标记语言</dt>
       <dd>不要使用更低级别来减少标题字体大小：改用 CSS `font-size` 属性</dd>
       <dd>避免跳过标题级别：总是从 `h1` 开始，然后使用 `h2` 等等</dd>
       <dd>避免在页面上多次使用 `h1`</dd>
-      <dt>Note</dt>
+      <dt>注意</dt>
       <dd>全部单词
         <pre>//错误
 function q() {}

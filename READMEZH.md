@@ -1,7 +1,7 @@
 <h1>指南</h1>
 
 <dl>
-  <dt>Created reason</dt>
+  <dt>创建原因</dt>
   <dd>世界是有组织，有意义，优雅的</dd>
   <dd>总结我的经验</dd>
 </dl>
