@@ -1,9 +1,12 @@
-# guides
+<h1>guides</h1>
 
-## created reason :
-1. the world is elegant , meaningful , organized !
+<dl>
+  <dt>Created reason</dt>
+  <dd>the world is organized, meaningful elegant!</dd>
+  <dd>summarize my experience</dd>
+</dl>
 
-### Be Collaborators ? welcome !
+<h3>welcome your contribution!</h3>
 
-### Donate me :
-<img src="https://thumbnail10.baidupcs.com/thumbnail/155aab2798d0922de6dcda3770fd00fb?fid=658333416-250528-534574233687267&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ZISJoj7u0TTBjEcB3NCyGMjZ35k%3d&expires=8h&chkbd=0&chkv=0&dp-logid=2281485403887224143&dp-callid=0&time=1523232000&size=c10000_u10000&quality=90&vuk=658333416&ft=image" height="320" alt="anlex N's Alipay"> <img src="https://thumbnail10.baidupcs.com/thumbnail/5e606d76bb7d6638d373ddc8c55e77c8?fid=658333416-250528-869366971687731&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-rIfVaLtUjlFh1o%2f25Ycznwq0xtE%3d&expires=8h&chkbd=0&chkv=0&dp-logid=2281485403887224143&dp-callid=0&time=1523232000&size=c10000_u10000&quality=90&vuk=658333416&ft=image" height="320" alt="anlex N's WeChatPay">
+<h3>Donate me</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="public/images/pay/alipay800x1280.jpg" height="320" alt="anlex N's Alipay"> <img src="public/images/pay/wechatpay800x1280.jpg" height="320" alt="anlex N's WeChatPay">
