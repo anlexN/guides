@@ -7,7 +7,7 @@ const thisInstance = new thisFunction() ,
 const thisObject = { myProperty : 1 }</pre>
       </dd>
       <dd>hyphen-case: 所有单词都是小写，但单词之间有连字符
-        <pre>//url
+        <pre>//统一资源定位器
 https://git-scm.com
 
 //文件夹和文件名字 , 仅有一个单词

@@ -69,7 +69,6 @@ a:hover {
 }
 
 pre {
-    margin-left: 18px;
     background-color: rgba(33, 150, 243, .12);
     padding: 16px;
     overflow-x: auto;
@@ -96,18 +95,25 @@ pre {
   <body><a class="lefter" href=".">←</a><a href="https://github.com/anlexN/mongoose-model">mongoose-model</a>
     <dl class="description">
       <dt>5 Case</dt>
-      <dd>camelCase: first letter lowercase , but after that all words uppercase
-        <pre>//function , instance , object , property , variable
-function thisFuction () {} ,
-const thisInstance = new thisFunction() ,
+      <dd>camelCase: first letter lowercase, but after that all words uppercase
+        <ol>
+          <li>
+            <q>function, instance, object, property, variable</q>
+            <pre>function thisFuction() {},
+const thisInstance = new thisFunction(),
 const thisObject = { myProperty : 1 }</pre>
+          </li>
+        </ol>
       </dd>
-      <dd>hyphen-case: all words is lowercase , but words have a hyphen to each other
-        <pre>//url
-https://git-scm.com
-
-//folder and file name , more than one word
-📂 models
+      <dd>hyphen-case: all words is lowercase, but words have a hyphen to each other
+        <ol>
+          <li>
+            <q>url</q>
+            <pre>https://git-scm.com</pre>
+          </li>
+          <li>
+            <q>folder and file name, more than one word   </q>
+            <pre>📂 models
     📂 thing
         📂 action
             📂 achieve-action
@@ -116,10 +122,14 @@ https://git-scm.com
             📂 ...
             demo-index.js
 </pre>
+          </li>
+        </ol>
       </dd>
       <dd>lowercase: all letters lowercase
-        <pre>//folder and file name , only one word
-📂 models
+        <ol>
+          <li>
+            <q>folder and file name, only one word</q>
+            <pre>📂 models
     📂 thing
         📂 action
         📂 creativework
@@ -127,35 +137,57 @@ https://git-scm.com
         📂 ...
         index.js
 </pre>
+          </li>
+        </ol>
       </dd>
-      <dd>PascalCase: all words is lowercase , but first letter is uppercase
-        <pre>//class , constructor , function library , singleton
-const ThingSchema = new mongoose.Schema({});
+      <dd>PascalCase: all words is lowercase, but first letter is uppercase
+        <ol>
+          <li>
+            <q>class, constructor, function library, singleton</q>
+            <pre>const ThingSchema = new mongoose.Schema({});
 class GoodUser {};</pre>
+          </li>
+        </ol>
       </dd>
       <dd>UPPERCASE: all letters uppercase
-        <pre>acronym</pre>
+        <ol>
+          <li>
+            <q>acrony</q>
+          </li>
+        </ol>
       </dd>
       <dt>Space</dt>
       <dd>between diffrent languages</dd>
       <dd>between number and unit</dd>
       <dt>Html</dt>
       <dd>do not use lower levels to decrease heading font size: use the CSS font-size property instead</dd>
-      <dd>avoid skipping heading levels: always start from h1, next use h2 and so on</dd>
-      <dd>avoiding using h1 more than once on a page</dd>
+      <dd>do not skip heading levels: always start from h1, next use h2 and so on</dd>
+      <dd>do not use h1 more than once on a page</dd>
       <dt>Note</dt>
       <dd>full words
-        <pre>//wrong
+        <ol>
+          <li>
+            <pre>//wrong
 function q() {}
 
 //right
 function query() {}</pre>
+          </li>
+        </ol>
       </dd>
-      <dd>ccording to the official
-        <pre>Android , IOS , iPhone , Google</pre>
+      <dd>the official terminology
+        <ol>
+          <li>
+            <pre>Android, IOS, iPhone, Google</pre>
+          </li>
+        </ol>
       </dd>
       <dd>english punctuation
-        <pre>Hello 世界!</pre>
+        <ol>
+          <li>
+            <pre>Hello 世界!</pre>
+          </li>
+        </ol>
       </dd>
       <dd>dark text on white background</dd>
       <dd>no trailing or leading underscore</dd>
