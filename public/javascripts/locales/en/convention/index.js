@@ -1,9 +1,9 @@
-{
+export default {
     "5 Case": "5 Case",
     "camelCase": "camelCase: first letter lowercase , but after that all words uppercase",
     "function": "function, instance, object, property, variable",
     "hyphen-case": "hyphen-case: all words is lowercase, but words have a hyphen to each other",
-    "url": "url",
+    "Url": "Url",
     "folder more": "folder and file name, more than one word",
     "lowercase": "lowercase: all letters lowercase",
     "folder only": "folder and file name, only one word",

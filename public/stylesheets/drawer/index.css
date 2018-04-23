@@ -49,6 +49,7 @@
 }
 
 .drawer {
+    padding-left: 16px;
     padding-top: 48px; 
     position: fixed;
     left: -272px;
@@ -64,16 +65,12 @@
 }
 
 .drawer a {
-    font-size: 22px;
+    height: 48px;
     display: block;
-    padding: 8px 16px;
-    color: rgba(255, 255, 255, .54);
+    /* padding: 8px 16px; */
+    color: rgba(255, 255, 255, .87);
     transition: all 500ms;
     user-select: none;
     cursor: pointer;
     text-decoration: none;
-}
-
-.drawer a:hover {
-    color: rgba(255, 255, 255, .87);
 }

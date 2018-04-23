@@ -7,27 +7,27 @@ block stylesheet
         include /public/stylesheets/lefter/index.css
 
 block content
-    a.lefter(href=".") ←
+    a.lefter(href="/guides") ←
     a(href="https://github.com/anlexN/mongoose-model") mongoose-model
 
     dl.description
-      dt 5 Case
-      dd camelCase: first letter lowercase, but after that all words uppercase
+      dt(l10n="5 Case") 5 Case
+      dd(l10n="camelCase") camelCase: first letter lowercase, but after that all words uppercase
         ol
           li
-            q function, instance, object, property, variable
+            q(l10n="function") function, instance, object, property, variable
             pre.
               function thisFuction() {},
               const thisInstance = new thisFunction(),
               const thisObject = { myProperty : 1 }
-      dd hyphen-case: all words is lowercase, but words have a hyphen to each other
+      dd(l10n="hyphen-case") hyphen-case: all words is lowercase, but words have a hyphen to each other
         ol
           li
-            q url
+            q(l10n="Url") Url
             pre.
               https://git-scm.com
           li
-            q folder and file name, more than one word   
+            q(l10n="folder more") folder and file name, more than one word   
             pre.
               📂 models
                   📂 thing
@@ -38,10 +38,10 @@ block content
                           📂 ...
                           demo-index.js
           
-      dd lowercase: all letters lowercase
+      dd(l10n="lowercase") lowercase: all letters lowercase
         ol
           li
-            q folder and file name, only one word
+            q(l10n="folder only") folder and file name, only one word
             pre.
               📂 models
                   📂 thing
@@ -51,26 +51,26 @@ block content
                       📂 ...
                       index.js
 
-      dd PascalCase: all words is lowercase, but first letter is uppercase
+      dd(l10n="PascalCase") PascalCase: all words is lowercase, but first letter is uppercase
         ol
           li
-            q class, constructor, function library, singleton
+            q(l10n="class, constructor") class, constructor, function library, singleton
             pre.
               const ThingSchema = new mongoose.Schema({});
               class GoodUser {};
-      dd UPPERCASE: all letters uppercase
+      dd(l10n="UPPERCASE") UPPERCASE: all letters uppercase
         ol
           li
-            q acrony
-      dt Space
-      dd between diffrent languages
-      dd between number and unit
-      dt Html
-      dd do not use lower levels to decrease heading font size: use the CSS font-size property instead
-      dd do not skip heading levels: always start from h1, next use h2 and so on
-      dd do not use h1 more than once on a page
-      dt Note
-      dd full words
+            q(l10n="acrony") acrony
+      dt(l10n="Space") Space
+      dd(l10n="diffrent languages") diffrent languages
+      dd(l10n="number and unit") number and unit
+      dt(l10n="Html") Html
+      dd(l10n="do not 1") do not use lower levels to decrease heading font size: use the CSS font-size property instead
+      dd(l10n="do not 2") do not skip heading levels: always start from h1, next use h2 and so on
+      dd(l10n="do not 3") do not use h1 more than once on a page
+      dt(l10n="Note") Note
+      dd(l10n="full words") full words
         ol
           li
             pre.
@@ -79,15 +79,16 @@ block content
 
               //right
               function query() {}
-      dd the official terminology
+      dd(l10n="the official terminology") the official terminology
         ol
           li
             pre.
               Android, IOS, iPhone, Google
-      dd english punctuation
+      dd(l10n="english punctuation") english punctuation
         ol
           li
             pre.
               Hello 世界!
-      dd dark text on white background
-      dd no trailing or leading underscore
+      dd(l10n="dark text") dark text on white background
+      dd(l10n="no trailing") no trailing or leading underscore
+    script(src="./index.js" type="module")

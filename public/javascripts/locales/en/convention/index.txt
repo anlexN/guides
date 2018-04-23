@@ -1,0 +1,27 @@
+export default {
+    "5 Case": 
+    "camelCase": 
+    "function": 
+    "hyphen-case": 
+    "url": 
+    "folder more": 
+    "lowercase": 
+    "folder only": 
+    "PascalCase": 
+    "class, constructor": 
+    "UPPERCASE": 
+    "acrony": 
+    "Space": 
+    "diffrent languages": 
+    "number and unit": 
+    "Html": 
+    "do not 1": 
+    "do not 2": 
+    "do not 3": 
+    "Note": 
+    "full words": 
+    "the official terminology": 
+    "english punctuation": 
+    "dark text": 
+    "no trailing": 
+}

@@ -11,10 +11,21 @@ block content
     label(for="checker")
         div
     nav.drawer
-        a(href="views/convention/index.html") Convention
-        a(href="views/donate/index.html") Donate
-    h1.header Guides
+        a(href="views/convention/index.html" l10n="Convention") Convention
+        a(href="views/donate/index.html" l10n="Donate") Donate
+        select(name="locales")
+            option(id="zh" value="zh") 中文
+            option(id="en" value="en") English
+            option(id="fr" value="fr") Français
+            option(id="it" value="it") italiano
+            option(id="ja" value="ja") 日本語
+            option(id="ko" value="ko") 한국어
+            option(id="ru" value="ru") русский
+            option(id="uk" value="uk") український
+    h1(l10n="Guides").header Guides
     dl.description
-        dt Created reason
-        dd the world is organized, meaningful, elegant!
-        dd summarize my experience
+        dt(l10n="Created reason") Created reason
+        dd(l10n="the world") the world is organized, meaningful, elegant!
+        dd(l10n="summarize") summarize my experience
+    script(type="module" src="./index.js")
+    

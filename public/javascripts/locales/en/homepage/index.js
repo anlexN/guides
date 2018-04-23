@@ -1,4 +1,4 @@
-{
+export default {
     "Convention": "Convention",
     "Donate": "Donate",
     "Guides": "Guides",

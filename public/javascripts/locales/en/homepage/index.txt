@@ -1,0 +1,8 @@
+export default {
+    "Convention": 
+    "Donate": 
+    "Guides": 
+    "Created reason": 
+    "the world": 
+    "summarize": 
+}
