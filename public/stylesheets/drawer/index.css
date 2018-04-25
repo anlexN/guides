@@ -49,28 +49,35 @@
 }
 
 .drawer {
-    padding-left: 16px;
+    margin: 0;
     padding-top: 48px; 
+    padding-left: 0;
     position: fixed;
     left: -272px;
     height: 100%;
-    background-color: rgba(0, 0, 0, .54);
+    background-color: rgba(255, 255, 255, .87);
     transition: left 500ms;
     width: 272px;
     z-index: 1;
+    font-size: 100%;
 }
 
 [id="checker"]:checked ~ .drawer {
     left: 0;
 }
 
-.drawer a {
+.drawer > li {
+    margin-left: 8px;
     height: 48px;
-    display: block;
-    /* padding: 8px 16px; */
     color: rgba(255, 255, 255, .87);
-    transition: all 500ms;
     user-select: none;
-    cursor: pointer;
-    text-decoration: none;
+    list-style: none;
+}
+
+.drawer > li > select {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 100%;
+    color: rgba(0, 0, 0, .87);
 }

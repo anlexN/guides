@@ -1,5 +1,22 @@
 extends /views/layouts/index.pug
 
+block head
+    title= "Guides"
+    meta(name="description" content="Guides let you learn more about the world")
+    script(type="application/ld").
+        {
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "your name",
+            "url": "http://www.your-site.com",
+            "sameAs": [
+              "http://www.facebook.com/your-profile",
+              "http://instagram.com/yourProfile",
+              "http://www.linkedin.com/in/yourprofile",
+              "http://plus.google.com/your_profile"
+            ]
+        }
+
 block stylesheet
     style
         include /public/stylesheets/description/index.css
@@ -10,10 +27,13 @@ block content
     input#checker(type="checkbox")
     label(for="checker")
         div
-    nav.drawer
-        a(href="views/convention/index.html" l10n="Convention") Convention
-        a(href="views/donate/index.html" l10n="Donate") Donate
-        select(name="locales")
+    ul.drawer
+        li
+          a(href="views/convention/index.html" l10n="Convention") Convention
+        li
+          a(href="views/donate/index.html" l10n="Donate") Donate
+        li
+          select(name="locales")
             option(id="zh" value="zh") 中文
             option(id="en" value="en") English
             option(id="fr" value="fr") Français

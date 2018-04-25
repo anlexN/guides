@@ -4,7 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>guides</title>
+    <title>Guides</title>
+    <meta name="description" content="Guides let you learn more about the world">
+    <script type="application/ld">
+      {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "your name",
+          "url": "http://www.your-site.com",
+          "sameAs": [
+            "http://www.facebook.com/your-profile",
+            "http://instagram.com/yourProfile",
+            "http://www.linkedin.com/in/yourprofile",
+            "http://plus.google.com/your_profile"
+          ]
+      }
+      
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <style>body {
     color: rgba(0, 0, 0, .87);
@@ -47,19 +63,13 @@ body::before {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+    font-weight: normal;
 }
 
 a {
-  text-decoration: none;
-  font-size: 18px;
-  outline: none;
-  color: rgba(33, 150, 243, .87);
-  transition: color 500ms;
-}
-
-a:hover {
-  color: rgba(33, 150, 243, 1);
+    text-decoration: none;
+    color: rgba(0, 0, 0, .87);
+    outline: none;
 }
     </style>
     <style>
@@ -123,30 +133,37 @@ a:hover {
 }
 
 .drawer {
-    padding-left: 16px;
+    margin: 0;
     padding-top: 48px; 
+    padding-left: 0;
     position: fixed;
     left: -272px;
     height: 100%;
-    background-color: rgba(0, 0, 0, .54);
+    background-color: rgba(255, 255, 255, .87);
     transition: left 500ms;
     width: 272px;
     z-index: 1;
+    font-size: 100%;
 }
 
 [id="checker"]:checked ~ .drawer {
     left: 0;
 }
 
-.drawer a {
+.drawer > li {
+    margin-left: 8px;
     height: 48px;
-    display: block;
-    /* padding: 8px 16px; */
     color: rgba(255, 255, 255, .87);
-    transition: all 500ms;
     user-select: none;
-    cursor: pointer;
-    text-decoration: none;
+    list-style: none;
+}
+
+.drawer > li > select {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 100%;
+    color: rgba(0, 0, 0, .87);
 }.header {
     text-align: center;
     margin-top: 0;
@@ -160,18 +177,22 @@ a:hover {
     <label for="checker">
       <div></div>
     </label>
-    <nav class="drawer"><a href="views/convention/index.html" l10n="Convention">Convention</a><a href="views/donate/index.html" l10n="Donate">Donate</a>
-      <select name="locales">
-        <option id="zh" value="zh">中文</option>
-        <option id="en" value="en">English</option>
-        <option id="fr" value="fr">Français</option>
-        <option id="it" value="it">italiano</option>
-        <option id="ja" value="ja">日本語</option>
-        <option id="ko" value="ko">한국어</option>
-        <option id="ru" value="ru">русский</option>
-        <option id="uk" value="uk">український</option>
-      </select>
-    </nav>
+    <ul class="drawer">
+      <li><a href="views/convention/index.html" l10n="Convention">Convention</a></li>
+      <li><a href="views/donate/index.html" l10n="Donate">Donate</a></li>
+      <li>
+        <select name="locales">
+          <option id="zh" value="zh">中文</option>
+          <option id="en" value="en">English</option>
+          <option id="fr" value="fr">Français</option>
+          <option id="it" value="it">italiano</option>
+          <option id="ja" value="ja">日本語</option>
+          <option id="ko" value="ko">한국어</option>
+          <option id="ru" value="ru">русский</option>
+          <option id="uk" value="uk">український</option>
+        </select>
+      </li>
+    </ul>
     <h1 class="header" l10n="Guides">Guides</h1>
     <dl class="description">
       <dt l10n="Created reason">Created reason</dt>
