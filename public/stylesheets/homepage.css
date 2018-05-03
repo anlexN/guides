@@ -1,0 +1,134 @@
+@media (max-width:750px) {
+  body::before {
+    background-image: url(/guides/public/images/desktop/desktop-60p-10x.jpg)
+  }
+}
+@media (min-width:750px) and (max-width:1440px) {
+  body::before {
+    background-image: url(/guides/public/images/desktop/desktop-60p-25x.jpg)
+  }
+}
+@media (min-width:1440px) and (max-width:2160px) {
+  body::before {
+    background-image: url(/guides/public/images/desktop/desktop-60p-25x.jpg)
+  }
+}
+@media (min-width:2160px) {
+  body:::before {
+    background-image: url(/guides/public/images/desktop/desktop-60p-50x.jpg)
+  }
+}
+a {
+  text-decoration: none;
+  color: rgba(0,0,0,.87);
+  outline: 0
+}
+body {
+  color: rgba(0,0,0,.87);
+  font-family: 'Fira Code';
+  margin: 0
+}
+body::before {
+  background-size: cover;
+  background-attachment: fixed;
+  bottom: 0;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: -1
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400
+}
+.header {
+  text-align: center;
+  margin-top: 0
+}
+[for=checker] {
+  height: 48px;
+  position: fixed;
+  transition: all .4s;
+  user-select: none;
+  width: 48px;
+  z-index: 2
+}
+[for=checker] div,
+[for=checker] div:after,
+[for=checker] div:before {
+  position: absolute;
+  height: 4px;
+  width: 32px;
+  background: #2196f3;
+  content: '';
+  margin-top: 20px;
+  margin-left: 8px;
+  transition: all .5s
+}
+[for=checker] div:before {
+  margin-top: -10px;
+  margin-left: 0
+}
+[for=checker] div:after {
+  margin-top: 10px;
+  margin-left: 0
+}
+#checker {
+  display: none
+}
+#checker:checked + [for=checker] div {
+  background-color: transparent
+}
+#checker:checked + [for=checker] div:before {
+  transform: rotate(45deg);
+  margin-top: 0
+}
+#checker:checked + [for=checker] div:after {
+  transform: rotate(-45deg);
+  margin-top: 0
+}
+.drawer {
+  margin: 0;
+  padding-top: 48px;
+  padding-left: 0;
+  position: fixed;
+  left: -272px;
+  height: 100%;
+  background-color: rgba(255,255,255,.87);
+  transition: left .5s;
+  width: 272px;
+  z-index: 1;
+  font-size: 100%
+}
+#checker:checked ~ .drawer {
+  left: 0
+}
+.drawer > li {
+  margin-left: 8px;
+  height: 48px;
+  color: rgba(255,255,255,.87);
+  user-select: none;
+  list-style: none
+}
+.drawer > li > select {
+  background-color: transparent;
+  outline: 0;
+  border: none;
+  font-size: 100%;
+  color: rgba(0,0,0,.87)
+}
+.description {
+  background-color: rgba(255,255,255,.87);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px
+}
+.description > dd {
+  color: rgba(0,0,0,.54)
+}

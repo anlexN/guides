@@ -1,7 +1,3 @@
-[id="checker"] {
-    display: none;
-}
-
 [for="checker"] {
     height: 48px;
     position: fixed;
@@ -34,16 +30,20 @@
     margin-left: 0;
 }
 
-[id="checker"]:checked ~ [for="checker"] div {
+#checker {
+    display: none;
+}
+
+#checker:checked + [for="checker"] div {
     background-color: transparent;
 }
 
-[id="checker"]:checked ~ [for="checker"] div:before {
+#checker:checked + [for="checker"] div:before {
     transform: rotate(45deg);
     margin-top: 0;
 }
 
-[id="checker"]:checked ~ [for="checker"] div:after {
+#checker:checked + [for="checker"] div:after {
     transform: rotate(-45deg);
     margin-top: 0;
 }
@@ -62,7 +62,7 @@
     font-size: 100%;
 }
 
-[id="checker"]:checked ~ .drawer {
+#checker:checked ~ .drawer {
     left: 0;
 }
 

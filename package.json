@@ -1,0 +1,31 @@
+{
+  "name": "guides",
+  "version": "0.0.0",
+  "description": "<h1>guides</h1>",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1"
+  },
+  "devDependencies": {
+    "babel-minify": "^0.4.0",
+    "babel-preset-minify": "^0.4.0",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anlexN/guides.git"
+  },
+  "author": "anlex N <1293006794@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anlexN/guides/issues"
+  },
+  "homepage": "https://github.com/anlexN/guides#readme"
+}

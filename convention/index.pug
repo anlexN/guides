@@ -2,10 +2,14 @@ extends /views/layouts/index.pug
 
 block stylesheet
     style
-        include /public/stylesheets/convention/index.css
-        include /public/stylesheets/description/index.css
-        include /public/stylesheets/lefter/index.css
-
+        if development
+            include /public/stylesheets/index.css
+            include /public/stylesheets/convention/index.css
+            include /public/stylesheets/description/index.css
+            include /public/stylesheets/lefter/index.css
+        else
+            include /public/stylesheets/convention.min.css
+            
 block content
     a.lefter(href="/guides") ←
     a(href="https://github.com/anlexN/mongoose-model") mongoose-model
@@ -91,4 +95,8 @@ block content
               Hello 世界!
       dd(l10n="dark text") dark text on white background
       dd(l10n="no trailing") no trailing or leading underscore
-    script(src="./index.js" type="module")
+    script
+        if development
+            include /public/javascripts/convention.js
+        else
+            include /public/javascripts/convention.min.js

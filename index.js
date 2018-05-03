@@ -20,3 +20,11 @@ locales(undefined, zh, en, fr, it, ja, ko, ru, uk);
 selectLocales.addEventListener("change", (event) => locales(event, zh, en, fr, it, ja, ko, ru, uk));
 
 document.addEventListener("languagechange", (event) => locales(event, zh, en, fr, it, ja, ko, ru, uk));
+
+if ("serviceWorker" in navigator) {
+    navigator
+        .serviceWorker
+        .register("service-worker.js")
+        .then(registration => console.log("ServiceWorker registration successful with scope: ", registration))
+        .catch(error => console.log("ServiceWorker registration failed: ", wrror));
+}

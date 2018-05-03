@@ -3,26 +3,41 @@ extends /views/layouts/index.pug
 block head
     title= "Guides"
     meta(name="description" content="Guides let you learn more about the world")
+    link(href="https://anlexn.github.io/guides" rel="canonical")
+    link(href="manifest.json" rel="manifest")
+    meta(name="format-detection" content="telephone=no")
+    meta(name="theme-color" content="#2196f3")
+    link(href="public/images/icon/hero192.png" rel="icon" sizes="192x192")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="#2196f3")
+    meta(name="apple-mobile-web-app-title" content="Guides")
+    link(href="public/images/icon/hero144.png" rel="apple-touch-icon-precomposed" sizes="144x144")
+    link(href="public/images/icon/hero152.png" rel="apple-touch-icon-precomposed" sizes="152")
+    link(href="public/images/icon/hero256.png" rel="apple-touch-startup-image")
+    meta(name="msapplication-TileImage" content="public/images/icon/hero144.png")
+    meta(name="msapplication-TileColor" content="#2196f3")
+    meta(name="msapplication-square256x256logo" content="public/images/icon/hero256.png")
     script(type="application/ld").
         {
             "@context": "http://schema.org",
             "@type": "Person",
-            "name": "your name",
-            "url": "http://www.your-site.com",
+            "name": "anlex N",
+            "url": "https://anlexn.github.io",
             "sameAs": [
-              "http://www.facebook.com/your-profile",
-              "http://instagram.com/yourProfile",
-              "http://www.linkedin.com/in/yourprofile",
-              "http://plus.google.com/your_profile"
+              "https://github.com/anlexN",
+              "https://twitter.com/anlex_N"
             ]
         }
 
 block stylesheet
     style
-        include /public/stylesheets/description/index.css
-        include /public/stylesheets/drawer/index.css
-        include /public/stylesheets/homepage/index.css
-    
+        if development
+            include /public/stylesheets/index.css
+            include /public/stylesheets/description/index.css
+            include /public/stylesheets/drawer/index.css
+            include /public/stylesheets/homepage/index.css
+        else
+            include /public/stylesheets/homepage.min.css
 block content
     input#checker(type="checkbox")
     label(for="checker")
@@ -47,5 +62,10 @@ block content
         dt(l10n="Created reason") Created reason
         dd(l10n="the world") the world is organized, meaningful, elegant!
         dd(l10n="summarize") summarize my experience
-    script(type="module" src="./index.js")
+    script
+        if development
+            include /public/javascripts/homepage.js
+        else
+            include /public/javascripts/homepage.min.js
+        
     

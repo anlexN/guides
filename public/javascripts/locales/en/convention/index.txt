@@ -23,5 +23,5 @@ export default {
     "the official terminology": 
     "english punctuation": 
     "dark text": 
-    "no trailing": 
+    "no trailing": 优雅
 }

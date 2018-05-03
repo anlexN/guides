@@ -2,9 +2,13 @@ extends /views/layouts/index
 
 block stylesheet
     style
-        include /public/stylesheets/donate/index.css
-        include /public/stylesheets/lefter/index.css
-
+        if development
+            include /public/stylesheets/index.css
+            include /public/stylesheets/donate/index.css
+            include /public/stylesheets/lefter/index.css
+        else
+            include /public/stylesheets/donate.min.css
+            
 block content
     a.lefter(href="/guides") ←
     div
