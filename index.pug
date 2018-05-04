@@ -1,13 +1,23 @@
 extends /views/layouts/index.pug
 
 block head
-    title= "Guides"
-    meta(name="description" content="Guides let you learn more about the world")
+    link(color="#2196f3" href="public/images/icon/hero-pinned-tab.min.svg" rel="mask-icon")
     link(href="https://anlexn.github.io/guides" rel="canonical")
+    link(href="public/images/icon/hero32.png" rel="icon" sizes="32x32" type="image/png")
+    link(href="public/images/icon/hero16.png" rel="icon" sizes="16x16" type="image/png")
+    link(href="public/images/icon/hero180.png" rel="apple-touch-icon" sizes="180x180")
     link(href="manifest.json" rel="manifest")
+    meta(name="description" content="Guides let you learn more about the world")
     meta(name="format-detection" content="telephone=no")
+    meta(name="msapplication-TileColor" content="#2196f3")
     meta(name="theme-color" content="#2196f3")
-    link(href="public/images/icon/hero192.png" rel="icon" sizes="192x192")
+    meta(property="og:description" content="Guides let you learn more about the world")
+    meta(property="og:image" content="https://anlexn.github.io/guides/public/images/icon/hero310.png")
+    meta(property="og:image:height" content="310")
+    meta(property="og:image:width" content="310")
+    meta(property="og:title" content="Guides")
+    meta(property="og:url" content="https://anlexn.github.io/guides")
+    title= "Guides"
 
     script(type="application/ld").
         {
