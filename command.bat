@@ -16,9 +16,9 @@ uglifyjs --compress --mangle --verbose -o public/javascripts/homepage.min.js pub
 uglifyjs --compress --mangle --beautify --verbose public/javascripts/convention.js
 uglifyjs --compress --mangle --verbose -o public/javascripts/convention.min.js public/javascripts/convention.js
 
-
-
 pug -O "{basedir: '.', development: true}" -P ./
 pug -O "{basedir: '.', development: true}" ./
 pug -O "{basedir: '.', development: false}" -P ./
 pug -O "{basedir: '.', development: false}" ./
+
+magick convert hero256.png -strip hero256-strip.png
