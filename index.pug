@@ -8,15 +8,7 @@ block head
     meta(name="format-detection" content="telephone=no")
     meta(name="theme-color" content="#2196f3")
     link(href="public/images/icon/hero192.png" rel="icon" sizes="192x192")
-    meta(name="apple-mobile-web-app-capable" content="yes")
-    meta(name="apple-mobile-web-app-status-bar-style" content="#2196f3")
-    meta(name="apple-mobile-web-app-title" content="Guides")
-    link(href="public/images/icon/hero144.png" rel="apple-touch-icon-precomposed" sizes="144x144")
-    link(href="public/images/icon/hero152.png" rel="apple-touch-icon-precomposed" sizes="152")
-    link(href="public/images/icon/hero256.png" rel="apple-touch-startup-image")
-    meta(name="msapplication-TileImage" content="public/images/icon/hero144.png")
-    meta(name="msapplication-TileColor" content="#2196f3")
-    meta(name="msapplication-square256x256logo" content="public/images/icon/hero256.png")
+
     script(type="application/ld").
         {
             "@context": "http://schema.org",
@@ -62,7 +54,7 @@ block content
         dt(l10n="Created reason") Created reason
         dd(l10n="the world") the world is organized, meaningful, elegant!
         dd(l10n="summarize") summarize my experience
-    script
+    script(async)
         if development
             include /public/javascripts/homepage.js
         else
