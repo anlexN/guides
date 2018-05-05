@@ -1,3 +1,5 @@
+live-server --open=guides
+
 html-minifier --collapse-boolean-attributes --collapse-inline-tag-whitespace --collapse-whitespace --minify-css {level:2} --minify-js true --remove-comments
 
 cleancss --debug -O2 --format beautify -o public/stylesheets/homepage.css public/stylesheets/index.css public/stylesheets/homepage/index.css public\stylesheets\drawer\index.css public/stylesheets/description/index.css
