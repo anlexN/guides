@@ -1,0 +1,15 @@
+extends /views/layouts/index.pug
+
+block stylesheet
+    style
+        if development
+            include /public/stylesheets/index.css
+            include /public/stylesheets/404/index.css
+        else
+            include /public/stylesheets/404.min.css
+
+block content
+    div
+      h1 404
+      span Let's say good bye
+    
