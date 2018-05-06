@@ -1,16 +1,20 @@
 doctype html
-html
+html(lang="en")
     head
         meta(charset="utf-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
-
-        link(as="stylesheet" href="https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css" rel="preload" onload="this.onload=null;this.rel='stylesheet'")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
         
         block head
 
-        block stylesheet
-    
+        link(href="https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css" as="stylesheet" rel="preload" onload="this.onload=null;this.rel='stylesheet'")
+        script(src="https://www.googletagmanager.com/gtag/js?id=UA-118673915-1" async)
+        script(async)
+            if development
+                include /public/javascripts/google-analytics.js
+            else
+                include /public/javascripts/google-analytics.min.js
+
     body
         block content
 
